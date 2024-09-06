@@ -9,9 +9,7 @@ function Header() {
         {/* App Name with Icon */}
         <div className="flex items-center space-x-2">
           <FaUsers size={24} color="white" /> {/* User icon */}
-          <h1 className="text-white font-bold text-xl sm:text-2xl">
-            UserManagementApp
-          </h1>
+          <h1 className="text-white font-bold text-xl sm:text-2xl">UMApp</h1>
         </div>
         {/* Navigation Links */}
         <ul className="flex space-x-4 sm:space-x-8 text-white font-semibold">
