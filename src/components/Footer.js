@@ -8,7 +8,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
           {/* Column 1: App Information */}
           <div>
-            <h3 className="font-bold text-xl mb-2">UserManagementApp</h3>
+            <h3 className="font-bold text-xl mb-2">UMApp</h3>
             <p className="text-gray-400">
               Manage your users efficiently and effectively.
             </p>
