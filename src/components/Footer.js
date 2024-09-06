@@ -4,7 +4,8 @@ function Footer() {
   return (
     <footer className="bg-[#333] text-white py-10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-3 gap-10 text-center md:text-left">
+        {/* Grid layout with responsive adjustments */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
           {/* Column 1: App Information */}
           <div>
             <h3 className="font-bold text-xl mb-2">UserManagementApp</h3>

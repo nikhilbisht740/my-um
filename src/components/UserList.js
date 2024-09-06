@@ -76,9 +76,9 @@ function UserList() {
   if (error) return <div className="text-red-600 text-center">{error}</div>;
 
   return (
-    <div className="p-20 bg-black">
+    <div className="p-4 sm:p-8 lg:p-20 bg-black min-h-screen">
       {/* Heading for the User List */}
-      <h2 className="text-4xl font-semibold mb-6 text-center italic text-white">
+      <h2 className="text-2xl sm:text-4xl font-semibold mb-6 text-center italic text-white">
         User List
       </h2>
 
@@ -90,10 +90,18 @@ function UserList() {
           <table className="min-w-full table-auto bg-[#1e1e1e] shadow-lg text-white rounded-lg">
             <thead>
               <tr className="bg-[#3a3a3a]">
-                <th className="px-6 py-4 text-left font-semibold">Name</th>
-                <th className="px-6 py-4 text-left font-semibold">Email</th>
-                <th className="px-6 py-4 text-left font-semibold">Phone</th>
-                <th className="px-6 py-4 text-left font-semibold">Actions</th>
+                <th className="px-4 sm:px-6 py-4 text-left font-semibold">
+                  Name
+                </th>
+                <th className="px-4 sm:px-6 py-4 text-left font-semibold">
+                  Email
+                </th>
+                <th className="px-4 sm:px-6 py-4 text-left font-semibold">
+                  Phone
+                </th>
+                <th className="px-4 sm:px-6 py-4 text-left font-semibold">
+                  Actions
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -103,14 +111,14 @@ function UserList() {
                   key={user.id}
                   className="border-b border-gray-700 hover:bg-[#2a2a2a]"
                 >
-                  <td className="px-6 py-4">{user.name}</td>
-                  <td className="px-6 py-4">{user.email}</td>
-                  <td className="px-6 py-4">{user.phone}</td>
-                  <td className="px-6 py-4 flex space-x-4">
+                  <td className="px-4 sm:px-6 py-4">{user.name}</td>
+                  <td className="px-4 sm:px-6 py-4">{user.email}</td>
+                  <td className="px-4 sm:px-6 py-4">{user.phone}</td>
+                  <td className="px-4 sm:px-6 py-4 flex space-x-2 sm:space-x-4">
                     {/* Edit user button */}
                     <Link
                       to={`/user/${user.id}`}
-                      className="flex items-center justify-center w-10 h-10"
+                      className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10"
                     >
                       <FaEdit size={18} color="#ff5757" />
                     </Link>
@@ -118,7 +126,7 @@ function UserList() {
                     {/* Delete user button */}
                     <button
                       onClick={() => deleteUser(user.id)}
-                      className="flex items-center justify-center w-10 h-10"
+                      className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10"
                     >
                       <FaTrash size={18} color="#ff5757" />
                     </button>
